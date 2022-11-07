@@ -2,7 +2,6 @@ package hello.core.member;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.management.remote.JMXServerErrorException;
 
 public class MemoryMemberRepository implements MemberRepository {
 
