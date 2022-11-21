@@ -1,14 +1,13 @@
 package com.example.singleton;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
+import com.example.AppConfig;
+import com.example.member.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.choi.AppConfig;
-import com.example.member.MemberService;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SingletonTest2 {
 	//1. static 영역에 객체를 딱 1개만 생성해둔다.

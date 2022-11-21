@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.choi.AppConfig;
+import com.example.AppConfig;
 import com.example.member.Grade;
 import com.example.member.MemberDto;
 import com.example.member.MemberService;

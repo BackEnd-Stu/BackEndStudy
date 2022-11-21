@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import com.example.choi.AppConfig;
+import com.example.AppConfig;
 import com.example.member.MemberService;
 
 public class SingletonTest {

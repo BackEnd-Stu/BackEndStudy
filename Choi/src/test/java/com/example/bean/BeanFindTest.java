@@ -15,7 +15,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.choi.AppConfig;
+import com.example.AppConfig;
 import com.example.member.MemberService;
 import com.example.member.MemberServiceImpl;
 import com.example.repository.MemberRepository;

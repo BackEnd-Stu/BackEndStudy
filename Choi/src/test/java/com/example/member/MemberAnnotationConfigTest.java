@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.choi.AppConfig;
+import com.example.AppConfig;
 
 public class MemberAnnotationConfigTest {
 	ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
