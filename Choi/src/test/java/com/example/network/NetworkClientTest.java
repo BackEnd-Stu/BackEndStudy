@@ -3,6 +3,7 @@ package com.example.network;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 class NetworkClientTest {
@@ -19,6 +20,10 @@ class NetworkClientTest {
 
           ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
           NetworkClient3 client = ac.getBean(NetworkClient3.class);
+
+          ac.close();
+
+        //스프링 컨테이너를 종료, ConfigurableApplicationContext 필요
 
     }
 
@@ -41,6 +46,7 @@ class NetworkClientTest {
 //        }
 
 //        @Bean
+        @Bean
         public NetworkClient3 networkClient3() {
             NetworkClient3 networkClient3 = new NetworkClient3();
             networkClient3.setUrl("http://hello-spring.dev");

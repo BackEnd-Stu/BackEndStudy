@@ -3,6 +3,7 @@ package com.example.network;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+
 public class NetworkClient3 {
     private String url;
 
