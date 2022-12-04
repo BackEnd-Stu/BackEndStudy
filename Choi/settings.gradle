@@ -1,1 +1,5 @@
 rootProject.name = 'Choi'
+include 'Servlet'
+include 'Principle'
+
+
