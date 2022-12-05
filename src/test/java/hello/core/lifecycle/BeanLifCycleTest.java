@@ -19,6 +19,9 @@ public class BeanLifCycleTest {
 
     @Controller
     public static class LifeCycleConfig {
+        // 2. 빈 등록시 초기화, 소멸 메서드로 등록
+//        @Bean(initMethod = "init", destroyMethod = "close")
+        // 3. @PostConstruct, @PreDestroy 어노테이션 방식
         @Bean
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
