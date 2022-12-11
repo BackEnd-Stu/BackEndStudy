@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class MemberRepository {
 
+    // MemberRepository가 아무리 많아도 딱 하나만 생성되어 사용된다
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
