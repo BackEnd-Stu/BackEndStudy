@@ -16,6 +16,8 @@ public class ResponseHtmlServlet extends HttpServlet {
         resp.setCharacterEncoding("utf-8");
 
         PrintWriter writer = resp.getWriter();
+
+
         writer.println("<html>");
         writer.println("<body>");
         writer.println(" <div>안녕?</div>");

@@ -10,6 +10,7 @@
         </processorPath>
         <module name="Choi.Servlet.main" />
         <module name="Choi.Principle.test" />
+        <module name="Choi.filter.main" />
         <module name="Choi.test" />
         <module name="Choi.Principle.main" />
         <module name="Choi.main" />

@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/Choi" />
             <option value="$PROJECT_DIR$/Choi/Principle" />
             <option value="$PROJECT_DIR$/Choi/Servlet" />
+            <option value="$PROJECT_DIR$/Choi/filter" />
           </set>
         </option>
       </GradleProjectSettings>
