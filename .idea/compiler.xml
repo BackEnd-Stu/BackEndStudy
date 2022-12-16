@@ -14,6 +14,7 @@
         <module name="Choi.test" />
         <module name="Choi.Principle.main" />
         <module name="Choi.main" />
+        <module name="Choi.Interceptor.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">

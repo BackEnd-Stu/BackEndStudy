@@ -24,6 +24,8 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.3.23" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.3.23" />
           <element id="library" level="project" name="Gradle: org.eclipse.jdt:ecj:3.18.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.3.23" />
+          <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.9.7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.4" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.4" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.4" />
@@ -33,9 +35,8 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.3.23" />
           <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.30" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.3.23" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.3.23" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.3.23" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.3.23" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.3.23" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-annotations-api:9.0.68" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.13.4" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.13.4" />

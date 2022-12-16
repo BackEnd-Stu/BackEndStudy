@@ -2,4 +2,5 @@ rootProject.name = 'Choi'
 include 'Servlet'
 include 'Principle'
 include 'filter'
+include 'Interceptor'
 

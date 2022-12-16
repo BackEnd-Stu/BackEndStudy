@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form th:action="@{/login/GameLoginCheck}" method="post">
+    <fieldset>
+      <legend>게임 로그인</legend>
+      <input type ="text" name="GameId" placeholder="아이디 입력하시오">
+      <input type ="text" name="password" placeholder="비번을 입력하시오">
+      <input type ="submit"/>
+    </fieldset>
+  </form>
+</body>
+</html>
