@@ -17,18 +17,23 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class GlobalFilter2 implements Filter {
     @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("GlobalFilter2가 생성 됩니다.");
+    }
+    @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 
         // 전처리
-        System.out.println("This is filter222222!!!!!!!!!!!!!" );
+        System.out.println("Before - This is filter2" );
 
+        httpServletResponse.setHeader("Pragma", "no-cache");
+        System.out.println("Setting Cache info");
 
-              filterChain.doFilter(httpServletRequest, httpServletResponse);
+        filterChain.doFilter(httpServletRequest, httpServletResponse);
 
-
-        System.out.println("This is filter22222222~~~~~~~~~~~~~~" );
+        System.out.println("After - This is filter2" );
         // 후처리
 
     }

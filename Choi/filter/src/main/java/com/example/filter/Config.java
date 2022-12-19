@@ -2,6 +2,7 @@ package com.example.filter;
 
 import com.example.filter.filter.GlobalFilter;
 import com.example.filter.filter.GlobalFilter2;
+import com.example.filter.filter.GlobalFilter3;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,5 +23,12 @@ public class Config {
             registrationBean.setOrder(1);
             return registrationBean;
         }
+
+    @Bean
+    public FilterRegistrationBean ThirdFilterRegister() {
+        FilterRegistrationBean registrationBean = new FilterRegistrationBean(new GlobalFilter3());
+        registrationBean.setOrder(3);
+        return registrationBean;
+    }
     }
 

@@ -7,5 +7,6 @@ import javax.sql.rowset.serial.SerialException;
 import java.io.IOException;
 
 public interface ControllerV1 {
-    void process(HttpServletRequest request, HttpServletResponse response) throws SerialException, IOException, ServletException;
+
+void process(HttpServletRequest request, HttpServletResponse response) throws SerialException, IOException, ServletException;
 }

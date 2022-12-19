@@ -4,20 +4,14 @@ import com.example.dto.Dto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TestController {
-    @RequestMapping ("/choi/ic")
+    @RequestMapping ("/choi/anything")
+    @ResponseBody
     public String test0 (Dto dto, Model model) {
         System.out.println("This is TestController");
-        model.addAttribute("dto", dto);
-        return "testView";
-    }
-
-    @RequestMapping ("/ic")
-    public String test1 (Dto dto, Model model) {
-        System.out.println("This is TestController");
-        model.addAttribute("dto", dto);
-        return "testView";
+        return "OK";
     }
 }
