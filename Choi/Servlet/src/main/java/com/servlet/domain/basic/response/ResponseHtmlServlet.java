@@ -1,4 +1,4 @@
-package com.servlet.basic.response;
+package com.servlet.domain.basic.response;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,8 +16,6 @@ public class ResponseHtmlServlet extends HttpServlet {
         resp.setCharacterEncoding("utf-8");
 
         PrintWriter writer = resp.getWriter();
-
-
         writer.println("<html>");
         writer.println("<body>");
         writer.println(" <div>안녕?</div>");

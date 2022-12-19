@@ -1,4 +1,4 @@
-package com.servlet.basic;
+package com.servlet.domain.basic;
 
 import lombok.Getter;
 import lombok.Setter;
