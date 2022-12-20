@@ -14,7 +14,17 @@
             <option value="$PROJECT_DIR$/Choi/Interceptor" />
             <option value="$PROJECT_DIR$/Choi/Principle" />
             <option value="$PROJECT_DIR$/Choi/Servlet" />
+            <option value="$PROJECT_DIR$/Choi/Spring" />
             <option value="$PROJECT_DIR$/Choi/filter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Choi/SOLID" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Choi/SOLID" />
           </set>
         </option>
       </GradleProjectSettings>
