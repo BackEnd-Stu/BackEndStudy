@@ -2,11 +2,12 @@ package com.servlet.web.springmvc.v1;
 
 import com.servlet.domain.Member;
 import com.servlet.domain.MemberRepository;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
-
+@Controller
 public class SpringMemberListControllerV1 {
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
