@@ -24,9 +24,7 @@ public class RequestParamController {
      * 반환 타입이 없으면서 이렇게 응답에 값을 직접 집어넣으면, view 조회X
      */
     @RequestMapping("/request-param-v1")
-    public void requestParamV1(HttpServletRequest request, HttpServletResponse
-            response) throws IOException {
-
+    public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username = request.getParameter("username");
         int age = Integer.parseInt(request.getParameter("age"));
         log.info("username={}, age={}", username, age);
@@ -45,7 +43,6 @@ public class RequestParamController {
     public String requestParamV2(
             @RequestParam("username") String memberName,
             @RequestParam("age") int memberAge) {
-
         log.info("username={}, age={}", memberName, memberAge);
         return "ok";
     }
@@ -121,8 +118,7 @@ public class RequestParamController {
     @ResponseBody
     @RequestMapping("/request-param-map")
     public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
-        log.info("username={}, age={}", paramMap.get("username"),
-                paramMap.get("age"));
+        log.info("username={}, age={}", paramMap.get("username"), paramMap.get("age"));
         return "ok";
     }
 
@@ -134,8 +130,7 @@ public class RequestParamController {
     @ResponseBody
     @RequestMapping("/model-attribute-v1")
     public String modelAttributeV1(@ModelAttribute HelloData helloData) {
-        log.info("username={}, age={}", helloData.getUsername(),
-                helloData.getAge());
+        log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
         return "ok";
     }
 
@@ -147,8 +142,7 @@ public class RequestParamController {
     @ResponseBody
     @RequestMapping("/model-attribute-v2")
     public String modelAttributeV2(HelloData helloData) {
-        log.info("username={}, age={}", helloData.getUsername(),
-                helloData.getAge());
+        log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
 
         return "ok";
     }
